@@ -13,6 +13,7 @@ namespace PartyInvites.Controllers
 
         public ViewResult Index()
         {
+            //commit
             return View();
         }
 
