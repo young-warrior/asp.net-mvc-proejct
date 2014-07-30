@@ -1,5 +1,5 @@
 ﻿<!является ключом к строго типизированному представлению!>
-@model PartyInvites.GuestResponse
+@model PartyInvites.Models.GuestResponse
 
 @{
     Layout = null;
@@ -10,11 +10,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
     <title>RsvpForm</title>
 </head>
 <body>
     @using (Html.BeginForm())
     {
+        @Html.ValidationSummary()
         <p>Your name: @Html.TextBoxFor(x => x.Name) </p>
         <p>Your email: @Html.TextBoxFor(x => x.Email)</p>
         <p>Your phone: @Html.TextBoxFor(x => x.Phone)</p>
