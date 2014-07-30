@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace SportsStore.WebUI
+namespace SportsStore.Domain
 {
     public static class WebApiConfig
     {

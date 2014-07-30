@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace SportsStore.WebUI
+namespace SportsStore.Domain
 {
     public class FilterConfig
     {
