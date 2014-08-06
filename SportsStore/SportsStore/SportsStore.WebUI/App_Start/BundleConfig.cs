@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace SportsStore.Domain
+namespace SportsStore.WebUI
 {
     public class BundleConfig
     {
