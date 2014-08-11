@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SportsStore.Domain.Entities;
+using SportsStore.Domain.Abstract;
 
 namespace SportsStore.Domain.Abstract
 {
@@ -14,5 +15,7 @@ namespace SportsStore.Domain.Abstract
     public interface IProductRepository
     {
         IQueryable<Product> Products { get; }
+        void SaveProduct(Product product);
+        Product DeleteProduct(int productID);
     }
 }
